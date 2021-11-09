@@ -1,0 +1,83 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header.title') }}">
+    <a href="https://www.expert.ai" target="_blank" title="expert.ai" class="md-header__button md-logo" aria-label="expert.ai">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 248.29 222.5" version="1.1"><path d="M167.46 134.31a11.37 11.37 0 01-5.12 8.89l-21.62 12.52a11.37 11.37 0 01-10.26 0l-21.66-12.45a11.38 11.38 0 01-5.14-8.88v-25a11.35 11.35 0 015.12-8.89L130.37 88a11.37 11.37 0 0110.26 0l21.66 12.47a11.37 11.37 0 015.14 8.88z" id="path37" fill="#fff" transform="translate(-11.1 -10.66)"/><path id="path883-7" d="M147.545 8.917c-3.52 3.245-14.313 9.668-26.896 9.757C95.852 18.85 96.526.287 72.664.234 58.504.205 42.41 12.095 42.576 32.83 42.678 45.737 52.374 59.874 70 62.587c19.8 3.048 33.334-18.696 56.766-17.089 13.397.919 18.828 7.978 27.199 12.432 8.796 4.68 16.871 6.195 24.365 17.338 13.109 19.49 1.044 42.082 13.584 57.705 11.163 13.908 28.253 15.236 39.483 8.871 18.039-10.224 20.29-30.107 13.184-42.354-11.977-20.639-27.716-10.774-39.962-32.337-6.214-10.942-6.048-23.5-4.999-28.17 3.833-17.054-5.489-29.295-14.794-34.506-9.306-5.211-24.428-7.405-37.28 4.44z" fill="#fff"/><path id="path883-7-0" d="M101.2 213.24c3.52-3.245 14.313-9.667 26.896-9.757 24.798-.176 24.123 18.387 47.986 18.44 14.159.03 30.252-11.86 30.088-32.595-.103-12.907-9.798-27.044-27.425-29.758-19.8-3.048-33.333 18.697-56.766 17.09-13.397-.92-18.828-7.978-27.198-12.432-8.796-4.68-16.872-6.196-24.366-17.338-13.108-19.49-1.043-42.082-13.583-57.706-11.163-13.908-28.254-15.236-39.484-8.87C-.69 90.537-2.942 110.42 4.165 122.666c11.976 20.64 27.715 10.774 39.961 32.337 6.215 10.942 6.049 23.5 4.999 28.171-3.832 17.054 5.49 29.295 14.795 34.506 9.305 5.21 24.428 7.404 37.28-4.441z" fill="#fff"/></svg>
+    </a>
+    <a href="https://docs.expert.ai" title="docs.expert.ai" class="md-header__button md-logo" aria-label="docs.expert.ai">
+      {% include ".icons/material/home.svg" %}
+    </a>
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      {% include ".icons/material/menu" ~ ".svg" %}
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            {{ config.site_name }}
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page and page.meta and page.meta.title %}
+              {{ page.meta.title }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </div>
+    {% if not config.theme.palette is mapping %}
+      <form class="md-header__option" data-md-component="palette">
+        {% for option in config.theme.palette %}
+          {% set primary = option.primary | replace(" ", "-") | lower %}
+          {% set accent  = option.accent  | replace(" ", "-") | lower %}
+          <input class="md-option" data-md-color-media="{{ option.media }}" data-md-color-scheme="{{ option.scheme }}" data-md-color-primary="{{ primary }}" data-md-color-accent="{{ accent }}" {% if option.toggle %} aria-label="{{ option.toggle.name }}" {% else %} aria-hidden="true" {% endif %} type="radio" name="__palette" id="__palette_{{ loop.index }}">
+          {% if option.toggle %}
+            <label class="md-header__button md-icon" title="{{ option.toggle.name }}" for="__palette_{{ loop.index0 or loop.length }}" hidden>
+              {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+            </label>
+          {% endif %}
+        {% endfor %}
+      </form>
+    {% endif %}
+    {% if config.extra.alternate %}
+      <div class="md-header__option">
+        <div class="md-select">
+          {% set icon = config.theme.icon.alternate or "material/translate" %}
+          <button class="md-header__button md-icon" aria-label="{{ lang.t('select.language.title') }}">
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              {% for alt in config.extra.alternate %}
+                <li class="md-select__item">
+                  <a href="{{ alt.link | url }}" hreflang="{{ alt.lang }}" class="md-select__link">
+                    {{ alt.name }}
+                  </a>
+                </li>
+                {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if "search" in config["plugins"] %}
+      <label class="md-header__button md-icon" for="__search">
+        {% include ".icons/material/magnify.svg" %}
+      </label>
+      {% include "partials/search.html" %}
+    {% endif %}
+    {% if config.repo_url %}
+      <div class="md-header__source">
+        {% include "partials/source.html" %}
+      </div>
+    {% endif %}
+  </nav>
+</header>

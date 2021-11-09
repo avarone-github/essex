@@ -1,2 +1,3 @@
 # essex
-Essex manual
+
+This is the project for the "book" that documents essex.

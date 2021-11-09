@@ -1,0 +1,123 @@
+site_name: "essex"
+copyright: "Copyright © 2020-2021 expert.ai - All rights reserved"
+
+theme:
+    name: material
+    custom_dir: theme
+    favicon: 'favicon.ico'
+    palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to light mode
+        
+nav:
+    - Introduction: index.md
+#    - Quick start:
+#          - 1. Setup the server: quick-start/setup-server/index.md
+#          - 2. Setup client tools: quick-start/setup-client-tools/index.md
+#          - 3. Make your first call: quick-start/first-call/index.md
+    - Requirements: requirements/index.md
+    - Installation: installation/index.md
+    - Execution modes: modes/index.md
+    - Other: other/index.md
+    - API guide:
+          - Overview: guide/index.md
+          - Document analysis:
+              - Full analysis: guide/full-analysis/index.md
+              - Partial analyses:
+                  - Deep linguistic analysis:
+                        - Overview: guide/linguistic-analysis/index.md
+                        - Text subdivision: guide/linguistic-analysis/subdivision/index.md
+                        - Part-of-speech tagging: guide/linguistic-analysis/pos-tagging/index.md
+                        - Morphological analysis: guide/linguistic-analysis/morphological-analysis/index.md
+                        - Lemmatization: guide/linguistic-analysis/lemmatization/index.md
+                        - Syntactic analysis: guide/linguistic-analysis/syntactic-analysis/index.md
+                        - Semantic analysis: guide/linguistic-analysis/semantic-analysis/index.md
+                  - Keyphrase extraction: guide/keyphrase-extraction/index.md
+                  - Named entity recognition: guide/entity-recognition/index.md
+                  - Relation extraction: guide/relation-extraction/index.md
+                  - Sentiment analysis: guide/sentiment-analysis/index.md
+              - Knowledge Graph: guide/knowledgegraph/index.md
+          - Document classification: 
+              - Overview: guide/classification/index.md
+              - "Categories' tree": guide/taxonomies/index.md
+          - Information extraction: 
+              - Overview: guide/extraction/index.md  
+              - Templates: guide/templates/index.md        
+    - API reference:
+          - Contents: reference/index.md
+          - Endpoints: reference/endpoints/index.md
+          - Request:
+                - Overview: reference/request/index.md
+                - Document analysis:
+                      - Full analysis: reference/request/full-analysis/index.md
+                      - Partial analyses:
+                            - Deep linguistic analysis: reference/request/linguistic-analysis/index.md
+                            - Keyphrase extraction: reference/request/keyphrase-extraction/index.md
+                            - Named entity recognition: reference/request/entity-recognition/index.md
+                            - Relation extraction: reference/request/relation-extraction/index.md
+                            - Sentiment analysis: reference/request/sentiment-analysis/index.md
+                - Document classification: reference/request/classification/index.md
+                - Information extraction: reference/request/extraction/index.md     
+                - Self-documentation resources: reference/request/taxonomies-templates/index.md                      
+          - HTTP status codes: reference/http-status-codes/index.md          
+          - Output:
+                - Overview: reference/output/index.md
+                - Document analysis:
+                      - Full analysis: reference/output/full-analysis/index.md
+                      - Partial analyses:
+                            - Deep linguistic analysis: reference/output/linguistic-analysis/index.md
+                            - Keyphrase extraction: reference/output/keyphrase-extraction/index.md
+                            - Named entity recognition: reference/output/entity-recognition/index.md
+                            - Relation extraction: reference/output/relation-extraction/index.md
+                            - Sentiment analysis: reference/output/sentiment-analysis/index.md
+                - Document classification: reference/output/classification/index.md
+                - Information extraction: reference/output/extraction/index.md                                
+                - Self-documentation resources: reference/output/taxonomies-templates/index.md             
+          - Positions: reference/positions/index.md
+          - Phrase types: reference/phrase-types/index.md
+          - Dependency representation: reference/dependency-representation/index.md
+          - Standard topics: reference/topics/index.md
+          - Entity types: reference/entity-types/index.md
+          - expert.ai types: reference/expert-ai-types/index.md
+    - Developer resources: developer-resources/index.md
+
+markdown_extensions:
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: true
+    - meta
+    - admonition
+
+extra_css:
+    - stylesheets/mkdocs-extra.css
+    
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/therealexpertai
+      name: expert.ai on GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/expertdotai
+      name: expert.ai on Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/expertdotai/
+      name: expert.ai on facebook
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/expert-ai/
+      name: expert.ai on LinkedIn
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/expertai
+      name: expert.ai YouTube channel

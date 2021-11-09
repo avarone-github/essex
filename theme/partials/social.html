@@ -1,0 +1,33 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% if config.extra.social %}
+  <div class="md-footer-social">
+    <a href="https://community.expert.ai/" target="_blank" rel="noopener" title="expert.ai Community" class="md-footer-social__link">
+      <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+  <g>
+    <path
+       id="path1561-1"
+       style="stroke-width:0.47743"
+       d="M 74.083984 25.244141 L 74.083984 30.53125 C 74.083984 41.338117 65.214483 50.21875 54.404297 50.21875 L 40.785156 50.21875 L 25.726562 65.537109 C 28.345503 68.35177 32.071086 70.123047 36.21875 70.123047 L 52.076172 70.123047 L 71.125 89.494141 C 72.843249 91.241518 76.73044 91.473594 75.947266 88.255859 L 70.277344 70.123047 L 76.28125 70.123047 C 84.202777 70.123047 90.625 63.700824 90.625 55.779297 L 90.625 39.587891 C 90.625 31.666361 84.202777 25.244141 76.28125 25.244141 L 74.083984 25.244141 z "
+       transform="scale(0.26458333)" />
+    <path
+       id="path1561"
+       style="stroke-width:0.47743"
+       d="M 14.34375 0 C 6.4222223 2.3684758e-15 0 6.4222223 0 14.34375 L 0 30.535156 C 2.3684758e-15 38.456682 6.4222223 44.878906 14.34375 44.878906 L 20.347656 44.878906 L 14.677734 63.011719 C 13.89456 66.229454 17.78175 65.997381 19.5 64.25 L 38.548828 44.878906 L 54.40625 44.878906 C 62.327777 44.878906 68.75 38.456682 68.75 30.535156 L 68.75 14.34375 C 68.75 6.4222223 62.327777 0 54.40625 0 L 14.34375 0 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>
+      </a>
+    {% for social in config.extra.social %}
+      {% set title = social.name %}
+      {% if not title and "//" in social.link %}
+        {% set _,url = social.link.split("//") %}
+        {% set title = url.split("/")[0] %}
+      {% endif %}
+      <a href="{{ social.link }}" target="_blank" rel="noopener" title="{{ title | e }}" class="md-footer-social__link">
+        {% include ".icons/" ~ social.icon ~ ".svg" %}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

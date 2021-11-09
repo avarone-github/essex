@@ -1,0 +1,41 @@
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# macOS
+.DS_Store
+._*
+
+# Backups
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# Eclipse
+.project
+.settings
+.metadata
+.classpath
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+
+# Visual Studio Code
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# Project specific
+/site
+/mkpdfs_output.html
+/BUILD.bat
+*.tar
+/mymkdocs
