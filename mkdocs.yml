@@ -50,26 +50,26 @@ nav:
               - Knowledge Graph: guide/knowledgegraph/index.md
           - Document classification: 
               - Overview: guide/classification/index.md
-              - "Categories' tree": guide/taxonomies/index.md
+              - "Categories' tree": guide/categories-tree/index.md
           - Information extraction: 
               - Overview: guide/extraction/index.md  
               - Templates: guide/templates/index.md        
     - API reference:
           - Contents: reference/index.md
           - Endpoints: reference/endpoints/index.md
-          - Request:
-                - Overview: reference/request/index.md
+          - Requests:
+                - Overview: reference/requests/index.md
                 - Document analysis:
-                      - Full analysis: reference/request/full-analysis/index.md
+                      - Full analysis: reference/requests/full-analysis/index.md
                       - Partial analyses:
-                            - Deep linguistic analysis: reference/request/linguistic-analysis/index.md
-                            - Keyphrase extraction: reference/request/keyphrase-extraction/index.md
-                            - Named entity recognition: reference/request/entity-recognition/index.md
-                            - Relation extraction: reference/request/relation-extraction/index.md
-                            - Sentiment analysis: reference/request/sentiment-analysis/index.md
-                - Document classification: reference/request/classification/index.md
-                - Information extraction: reference/request/extraction/index.md     
-                - Self-documentation resources: reference/request/taxonomies-templates/index.md                      
+                            - Deep linguistic analysis: reference/requests/linguistic-analysis/index.md
+                            - Keyphrase extraction: reference/requests/keyphrase-extraction/index.md
+                            - Named entity recognition: reference/requests/entity-recognition/index.md
+                            - Relation extraction: reference/requests/relation-extraction/index.md
+                            - Sentiment analysis: reference/requests/sentiment-analysis/index.md
+                - Document classification: reference/requests/classification/index.md
+                - Information extraction: reference/requests/extraction/index.md     
+                - Self-documentation resources: reference/requests/taxonomies-templates/index.md                      
           - HTTP status codes: reference/http-status-codes/index.md          
           - Output:
                 - Overview: reference/output/index.md
@@ -85,11 +85,11 @@ nav:
                 - Information extraction: reference/output/extraction/index.md                                
                 - Self-documentation resources: reference/output/taxonomies-templates/index.md             
           - Positions: reference/positions/index.md
-          - Phrase types: reference/phrase-types/index.md
-          - Dependency representation: reference/dependency-representation/index.md
-          - Standard topics: reference/topics/index.md
           - Entity types: reference/entity-types/index.md
+          - Phrase types: reference/phrase-types/index.md
+          - Topics: reference/topics/index.md
           - expert.ai types: reference/expert-ai-types/index.md
+          - Dependency representation: reference/dependency-representation/index.md
     - Developer resources: developer-resources/index.md
 
 markdown_extensions:

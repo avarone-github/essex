@@ -2,7 +2,7 @@
 
 ## Categories' tree
 
-The output of the self-documentation resource returning the [categories' tree](../../../guide/taxonomies/index.md) is a JSON object like this:
+The output of the self-documentation resource returning the [categories' tree](../../../guide/categories-tree/index.md) is a JSON object like this:
 
 ``` json
 {

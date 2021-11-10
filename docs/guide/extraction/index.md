@@ -2,7 +2,7 @@
 
 Information extraction detects meaningful parts of the document by mapping them to [templates](../templates/index.md). It returns **records**&mdash;you can think of a record as an instance of a template&mdash;based on the text matched by extraction rules.
 
-Unlike document analysis, information extraction is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine.
+Unlike document analysis, which is available by default in any text intelligence engine deployed from <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a>, information extraction is a custom feature corresponding to the work of Knowledge Engineers that have programmed the text intelligence engine using Studio IDE.
 
 In the reference section of this manual you will find all the information you need to perform information extraction, specifically:
 

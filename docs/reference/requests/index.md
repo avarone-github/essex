@@ -1,27 +1,44 @@
-# Request format
+# Requests
 
-The document analysis, classification and extraction capabilities of the essex API are provided by a POST endpoint.
+All essex API requests must:
 
-The request you post must be a JSON object with the following format:
+- Use the `POST` method.
+- Contain an UTF-8 encoded **JSON object** as their payload.
+- Have this header:
+
+		application/json; charset=utf-8
+
+- Be sent to one of the API [endpoints](../endpoints/index.md).
+
+If text analysis is required, the JSON object must contain the text to parse. In all cases the object contains parameters that specify the request.
+
+For example, the JSON object to send in order to request document classification is like this:
 
 ``` json
 {
 	"document": {
 		"text": "Your text here."
 	},
-	"options" : {
-		"analysis" : [ ... ],
-		"features" : [ ... ]
+	"options": {
+		"analysis": [
+			"categories"
+		],
+		"features": [
+			"knowledge",
+			"dependency",
+			"syncpos"
+		]
 	}
 }
 ```
 
-Document text must be encoded with UTF-8.	
-The `Content-Type` header of the request must be set to:
+!!! info
+	The SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a> automatically take care of building the proper JSON object for each request so you don't have to worry about that detail.
 
-	application/json; charset=utf-8
+The next articles in this section detail the structure of JSON objects to use to request API resources.
 
-`options` defines the request type. There can be multiple `options` values in a single request.
+<!--
+The `options` property specifies the request type. There can be multiple `options` values in a single request.
 Here are the possible `analysis` types that can be performed in a single request.
 
 analysis | description
@@ -42,3 +59,4 @@ features | description
 
 Note:
 to be able to safely use the output [positions](../../reference/positions/index.md) on the input text, the `syncpos` feature must be explicitly added to the request, otherwise the exact positioning is not guaranteed.
+-->

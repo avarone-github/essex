@@ -1,8 +1,8 @@
 # Document classification
 
-Document classification determines what the document text is about by mapping it to the categories of a [tree](../taxonomies/index.md).
+Document classification determines what the document text is about by mapping it to the categories of a [tree](../categories-tree/index.md).
 
-Unlike document analysis, document classification is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine.
+Unlike document analysis, which is available by default in any text intelligence engine deployed from <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a>, document classification is a custom feature corresponding to the work of Knowledge Engineers that have programmed the text intelligence engine using Studio IDE.
 
 In the reference section of this manual you will find all the information you need to perform document classification, specifically:
 
