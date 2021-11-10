@@ -2,13 +2,13 @@
 
 Information extraction detects meaningful parts of the document by mapping them to [templates](../templates/index.md). It returns **records**&mdash;you can think of a record as an instance of a template&mdash;based on the text matched by extraction rules.
 
-Unlike document analysis, information extraction is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine to recognize and extract specific text from documents.
+Unlike document analysis, information extraction is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine.
 
 In the reference section of this manual you will find all the information you need to perform information extraction, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/extraction/index.md) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/extraction/index.md) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/extraction/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/output/extraction/index.md) returned.
 
 Here is an example of performing information extraction on a short English test using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
@@ -35,7 +35,7 @@ Here is an example of performing information extraction on a short English test 
 
 === "Java"
     
-    The program prints the [JSON response](../../reference/output/extraction/index.md).
+    The program prints a representation of the returned JSON object and fills a `List` variables with the extracted records.
         
     ``` java
     import ai.expert.nlapi.security.Authentication;

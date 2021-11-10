@@ -2,13 +2,13 @@
 
 Document classification determines what the document text is about by mapping it to the categories of a [tree](../taxonomies/index.md).
 
-Unlike document analysis, document classification is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine to determine what documents are about.
+Unlike document analysis, document classification is a custom feature corresponding to the work of Knowledge Engineers that have used <a href="https://docs.expert.ai/studio/latest/" target="_blank">expert.ai Studio</a> to instruct the text intelligence engine.
 
 In the reference section of this manual you will find all the information you need to perform document classification, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/classification/index.md) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/classification/index.md) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/classification/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/output/classification/index.md) returned.
 
 Here is an example of performing document classification on a short English test using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
@@ -32,7 +32,7 @@ Here is an example of performing document classification on a short English test
 
 === "Java"
     
-    The program prints the [JSON response](../../reference/output/classification/index.md).
+    The program prints a representation of the returned JSON object and the list of detected categories.
         
     ``` java
     import ai.expert.nlapi.security.Authentication;

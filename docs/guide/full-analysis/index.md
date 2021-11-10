@@ -13,8 +13,8 @@ Document analysis is a standard feature which is available by default in every t
 In the reference section of this manual you will find all the information you need to perform full document analysis, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/full-analysis/index.md) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/full-analysis/index.md) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/full-analysis/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/output/full-analysis/index.md) returned.
 
 Here is an example of performing full document analysis on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 

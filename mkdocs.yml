@@ -30,7 +30,6 @@ nav:
     - Requirements: requirements/index.md
     - Installation: installation/index.md
     - Execution modes: modes/index.md
-    - Other: other/index.md
     - API guide:
           - Overview: guide/index.md
           - Document analysis:

@@ -1,16 +1,16 @@
 # Templates
 
-A template is the set of fields that [information extraction](../extraction/index.md) can fill with data. The essex API provides a self-documentation resource returning all the defined templates.
+A template is the set of fields that [information extraction](../extraction/index.md) can fill with data to create records. The essex API provides a self-documentation resource returning all the defined templates.
 
 !!! note
-	This resource is useful&mdash;and meaningful&mdash;only if the text intelligence engine has been programmed to perform document classification.
+	This resource is useful&mdash;and meaningful&mdash;only if the text intelligence engine has been programmed to perform information extraction.
 
 It must be requested using the `POST` method.  
 In the reference section of this manual you will find:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/taxonomies-templates/index.md#templates) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/taxonomies-templates/index.md#templates) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/taxonomies-templates/index.md#templates) to send together with the request.
+- The format of the [JSON object](../../reference/output/taxonomies-templates/index.md#templates) returned.
 
 Here is an example of getting the templates using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
@@ -35,7 +35,7 @@ Here is an example of getting the templates using one of the SDKs available on <
 
 === "Java"
     
-    The program prints the [JSON response](../../reference/output/taxonomies-templates/index.md#templates).
+    The program fills a `List` variable with templates' information.
     
     ``` java
     import ai.expert.nlapi.security.Authentication;
@@ -72,5 +72,3 @@ Here is an example of getting the templates using one of the SDKs available on <
         }
     }
     ```
-
-    The server returns a [JSON object](../../reference/output/taxonomies-templates/index.md#taxonomies).

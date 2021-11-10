@@ -7,8 +7,8 @@ Sentiment analysis also performs knowledge linking: [Knowledge Graph](../knowled
 In the reference section of this manual you will find all the information you need to perform sentiment analysis, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/sentiment-analysis/index.md) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/sentiment-analysis/index.md) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/sentiment-analysis/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/output/sentiment-analysis/index.md) returned.
 
 Here is an example of performing sentiment analysis on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
@@ -33,7 +33,7 @@ Here is an example of performing sentiment analysis on a short English text usin
 
 === "Java"
     
-    The program prints the [JSON response](../../reference/output/entity-recognition/index.md) and the overall sentiment.
+    The program prints a representation of the returned JSON object and the overall sentiment.
     
     ``` java
     import ai.expert.nlapi.security.Authentication;

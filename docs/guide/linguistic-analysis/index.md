@@ -20,14 +20,14 @@ The analysis is "deep" because, together with common linguistic analysis, it als
 In the manual's reference section you will find all the information required to perform deep linguistic analysis, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/linguistic-analysis/index.md) which constitutes the payload of the request.
-- The format of the [JSON object](../../reference/output/linguistic-analysis/index.md) which constitutes the body of the returned resource.
+- The format of the [JSON object](../../reference/request/linguistic-analysis/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/output/linguistic-analysis/index.md) returned.
 
 Here is an example of performing deep linguistic analysis on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
 === "Python"
 
-    The program prints a [JSON representation of the results](../../reference/output/linguistic-analysis/index.md) and the list of tokens' lemmas with their part-of-speech.
+    The program prints a the list of tokens' lemmas with their part-of-speech.
 
     ``` python
     from expertai.nlapi.edge.client import ExpertAiClient
@@ -50,7 +50,7 @@ Here is an example of performing deep linguistic analysis on a short English tex
 
 === "Java"
     
-    The program prints a [JSON representation of the results](../../reference/output/linguistic-analysis/index.md) and the list of tokens' lemmas with their part-of-speech.
+    The program prints a representation of the returned JSON object and a list of tokens' lemmas with their part-of-speech.
     
     ``` java
     import ai.expert.nlapi.security.Authentication;
