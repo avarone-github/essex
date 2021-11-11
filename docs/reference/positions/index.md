@@ -9,7 +9,7 @@ certain category.
 
 All these positions refer to the analyzed text, that is the `content` property of the `data` object.
 
-Note: To force the positions to be in sync with the original text sent in the request, even when it is transformed by the engine, the `feature` with name `syncpos` must be added to the request, as specified in the [request general format description](../../reference/request/index.md).
+Note: To force the positions to be in sync with the original text sent in the request, even when it is transformed by the engine, the `feature` with name `syncpos` must be added to the request, as specified in the [request general format description](../../reference/requests/index.md).
 
 
 

@@ -23,7 +23,7 @@ In the reference section of this manual you will find all the information you ne
 
 - The [types](../../reference/entity-types/index.md) of named entities that essex is able to recognize.
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/entity-recognition/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/requests/entity-recognition/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/entity-recognition/index.md) returned.
 
 Here is an example of performing named entity recognition on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:

@@ -36,4 +36,4 @@ The <a href="https://en.wikipedia.org/wiki/POST_(HTTP)" target="_blank">`POST` m
 
 Presented with this request, essex responds synchronously (after an amount of time depending on the type of processing requested, the complexity and the length of the text) by returning the requested resource, that is another JSON object.
 
-In the reference section of this manual you will find all the information about the [endpoints](../reference/endpoints/index.md), the [JSON objects](../reference/request/index.md) to send with requests and the [JSON objects](../reference/output/index.md) returned by essex.
+In the reference section of this manual you will find all the information about the [endpoints](../reference/endpoints/index.md), the [JSON objects](../reference/requests/index.md) to send with requests and the [JSON objects](../reference/output/index.md) returned by essex.

@@ -7,7 +7,7 @@ Relation extraction also performs knowledge linking: [Knowledge Graph](../knowle
 In the reference section of this manual you will find all the information you need to perform relations extraction, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/relation-extraction/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/requests/relation-extraction/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/relation-extraction/index.md) returned.
 
 Here is an example of performing relation extraction on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:

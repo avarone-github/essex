@@ -15,7 +15,7 @@ Relevant topics are chosen from the Knowledge Graph. You can find a list of rele
 In the reference section of this manual you will find all the information you need to perform keyphrase extraction, specifically:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/full-analysis/index.md) to send together with the request.
+- The format of the [JSON object](../../reference/requests/full-analysis/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/full-analysis/index.md) returned.
 
 Here is an example of performing keyphrase extraction on an English newspaper article using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:

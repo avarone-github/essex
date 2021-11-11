@@ -9,7 +9,7 @@ It must be requested using the `POST` method.
 In the reference section of this manual you will find:
 
 - The [endpoint](../../reference/endpoints/index.md) of the API resource to request.
-- The format of the [JSON object](../../reference/request/taxonomies-templates/index.md#categories-tree) to send together with the request.
+- The format of the [JSON object](../../reference/requests/taxonomies-templates/index.md#categories-tree) to send together with the request.
 - The format of the [JSON object](../../reference/output/taxonomies-templates/index.md#categories-tree) returned.
 
 Here is an example of getting the categories' tree using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
