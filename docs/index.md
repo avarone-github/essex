@@ -11,5 +11,4 @@ Essex is designed to be easily integrated so to add the aforementioned capabilit
 <a class="card" href="modes/"><strong>Execution modes</strong></a>
 <a class="card" href="guide/"><strong>API guide</strong></a>
 <a class="card" href="reference/"><strong>API reference</strong></a>
-<a class="card" href="developer-resources/"><strong>Developer resources</strong></a>
 </div>

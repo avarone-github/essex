@@ -90,7 +90,6 @@ nav:
           - Topics: reference/topics/index.md
           - expert.ai types: reference/expert-ai-types/index.md
           - Dependency representation: reference/dependency-representation/index.md
-    - Developer resources: developer-resources/index.md
 
 markdown_extensions:
     - pymdownx.tabbed
