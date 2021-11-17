@@ -76,6 +76,7 @@ the _really_ modifier makes the score get worse:
 		]
 	}
 ]
+```
 
 On the other hand, a _not_ before _bad_ can invert the sentiment polarity from negative to positive. The sentiment value can be zero.
 

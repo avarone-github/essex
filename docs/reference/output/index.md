@@ -4,7 +4,7 @@
 
 In response to a request for a resource, in case of success, the API returns the HTTP `200 OK` status and a UTF-8 encoded JSON object.
 
-All the [document analysis](../../guide/full-analysis/index.md), [document classification](../../guide/classification/index.md) and [information extraction](../../guide/extraction/index.md) operations share this response format:
+All the analysis resources, whether [document analysis](../../guide/full-analysis/index.md), [document classification](../../guide/classification/index.md) or [information extraction](../../guide/extraction/index.md), share this output format:
 
 <pre>
 <code>{
@@ -17,7 +17,7 @@ All the [document analysis](../../guide/full-analysis/index.md), [document class
 	}
 }</code></pre>
 
-Self-documention resources have their [peculiar format](taxonomies-templates/index.md).
+Self-documention resources have their peculiar [output format](taxonomies-templates/index.md).
 
 The value of the Boolean property `success` indicates that processing was successful while the `data` object contains the results of the analysis.  
 The `data` object always has the following properties:
@@ -55,7 +55,7 @@ In response to a request for a resource, in case of a managed error, the API ret
 	],
 }</code></pre>
 
-The value of the Boolean property `success` indicates that processing was not successful while the `error` object contains the error details.
+The value of the Boolean property `success` indicates that processing was not successful while the `error` object's properties `code` and `message` contain the error code and the error message respectively.
 
 For example, when the request for document analysis or classification resource is a JSON object without the `text` property, you get this object:
 

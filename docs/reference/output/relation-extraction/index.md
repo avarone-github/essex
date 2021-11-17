@@ -137,7 +137,7 @@ preposition* + `_who` |
 `of_age` |
 `limited_to` |
 
-\* Prepositions are expressed in the language specified for the analysis, so, for example, a possible value in the case of German language could be `auf_what`. Multi-word prepositional expressions like _according to_, _in front of_, ecc., are written in compact form (`accordingto`, `infrontof`).
+\* Prepositions are expressed in the language of the text intelligence engine. For example, a possible value in the case of German language could be `auf_what`. Multi-word names of prepositional expressions like _according to_, _in front of_, ecc., are written in compact form without spaces between words (`accordingto`, `infrontof`).
 
 \*\* The `sub` relation type is used for subordinate clauses.
 

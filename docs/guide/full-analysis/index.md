@@ -16,6 +16,7 @@ In the reference section of this manual you will find all the information you ne
 - The format of the [JSON object](../../reference/requests/full-analysis/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/full-analysis/index.md) returned.
 
+<!--
 Here is an example of performing full document analysis on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
 === "Python"
@@ -120,4 +121,4 @@ Here is an example of performing full document analysis on a short English text 
         }
     }
     ```
-
+-->

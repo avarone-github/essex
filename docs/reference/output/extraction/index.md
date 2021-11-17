@@ -15,7 +15,7 @@ The [information extraction](../../../guide/extraction/index.md) resource return
 
 For the description of the `contents`, `language` and `version` properties, see output [overview](../index.md).
 
-Each item of the `extractions` array represents an extraction record (a template instance), for example:
+Each item of the `extractions` array represents an extraction record, for example:
 
 ``` json
 "extractions": [
@@ -58,15 +58,15 @@ Each item of the `extractions` array represents an extraction record (a template
 ]
 ```
 
-- `namespace` is the name of the software package exported from expert.ai Studio.
-- `template` is the name of the template for each extracted data record (Templates and Fields are defined in the expert.ai Studio project, see 
-	<a href="https://docs.expert.ai/studio/latest/languages/extraction/structures/">Templates and fields</a> in the Studio documentation).
-- `fields` is the list of the extracted fields related to the template (Templates and Fields are defined in the expert.ai Studio project, see 
-	<a href="https://docs.expert.ai/studio/latest/languages/extraction/structures/" target="_blank">Templates and fields</a> in the Studio documentation).
+- `namespace` is the name of the software module carrying out information extraction inside the text intelligence engine.
+- `template` is the name of the record's template 
+- `fields` is the array of record's fields.
 
-Each `fields` array item represents an extracted value, which is related to each other.
+Each item of the `fields` array represents an extracted field, where:
 
 - `name` is the field's name.
 - `value` is the field's value.
 - `positions` is an array containing the extracted field's [positions](../../positions/index.md).
 
+!!! info
+	You can find more information about templates and fields in the	<a href="https://docs.expert.ai/studio/latest/languages/extraction/structures/" target="_blank">Studio documentation</a>.

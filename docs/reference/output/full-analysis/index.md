@@ -128,7 +128,7 @@ the corresponding entry in the `knowledge` array can be:
 It can be a "many-to-one" relationship since more than one item in the `tokens`, `relations` and sentiment `items` arrays can have the same syncon ID, but there's always one entry in the `knowledge` array for a given syncon, so the `knowledge` array is a reference table.  
 For example, if a text contains several occurrences of _basketball player_, each occurrence corresponds to a separate item in the `tokens` array, but all tokens "point" to the same entry in the `knowledge` array.
 
-Items with the syncon property set to -1 have no corresponding entry in the `knowledge` array. This is because they are concepts recognized through heuristics and are not present in the context's Knowledge Graph.
+Items with the syncon property set to -1 have no corresponding entry in the `knowledge` array. This is because they are concepts recognized through heuristics and are not present in the Knowledge Graph.
 
 Each entry in the array has a format like this:
 

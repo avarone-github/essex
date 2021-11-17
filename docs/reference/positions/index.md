@@ -1,21 +1,21 @@
 # Positions
 
-Analysis, classification and extraction return positions. For example:
+All the analysis resources, whether [document analysis](../../guide/full-analysis/index.md), [document classification](../../guide/classification/index.md) or [information extraction](../../guide/extraction/index.md), return the positions of the blocks of text corresponding to each information discovered by the analysis.  
+For example:
 
-- The deep linguistic analysis resource returns the positions of all the subdivisions of the text (paragraphs, sentences, phrases, tokens and atoms).
+- The deep linguistic analysis resource returns the positions of all the subdivisions of the tex: paragraphs, sentences, phrases, tokens and atoms.
 - The keyphrase extraction resource returns the positions of main sentences, main phrases, main concepts and main lemmas.
-- The classification resources return the positions of the parts of the text help identify a
-certain category.
+- The classification resources return the positions of the parts of the text that triggered categorization rules.
 
-All these positions refer to the analyzed text, that is the `content` property of the `data` object.
+All these positions refer to blocks of the analyzed text, that is the `content` property of the `data` object.
 
+<!--
 Note: To force the positions to be in sync with the original text sent in the request, even when it is transformed by the engine, the `feature` with name `syncpos` must be added to the request, as specified in the [request general format description](../../reference/requests/index.md).
-
-
+-->
 
 The starting position is returned in the `start` property and the ending position in the `end` property.
 
-The value of the `start` property is the zero-based index of the first character of the block.  
+The value of the `start` property is the zero-based index of **the first character of the block**.  
 For example, if a text begins with:
 
 	Michael Jordan was one of the best basketball players of all time.
@@ -31,7 +31,7 @@ Michael Jordan was one of the best basketball players <span class="bordered">of 
 </code>
 </pre>
 	
-The value of the `end` position is the zero-based index of the first character after the text block.
+The value of the `end` position is the zero-based index of the **first character after the text block**.
 In the example case above, the end position of the phrase is 65:
 
 <pre>

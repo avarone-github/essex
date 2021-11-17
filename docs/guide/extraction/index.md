@@ -10,6 +10,7 @@ In the reference section of this manual you will find all the information you ne
 - The format of the [JSON object](../../reference/requests/extraction/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/extraction/index.md) returned.
 
+<!--
 Here is an example of performing information extraction on a short English test using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
 === "Python"
@@ -85,4 +86,4 @@ Here is an example of performing information extraction on a short English test 
         }
     }
     ```
-
+-->

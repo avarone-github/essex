@@ -10,7 +10,8 @@ All essex API requests must:
 
 - Be sent to one of the API [endpoints](../endpoints/index.md).
 
-If text analysis is required, the JSON object must contain the text to parse. In all cases the object contains parameters that specify the request.
+If analysis is required, whether [document analysis](../../guide/full-analysis/index.md), [document classification](../../guide/classification/index.md) or [information extraction](../../guide/extraction/index.md), the JSON object must contain the text to parse.  
+In all cases the object contains parameters that specify the request.
 
 For example, the JSON object to send in order to request document classification is like this:
 
@@ -32,8 +33,10 @@ For example, the JSON object to send in order to request document classification
 }
 ```
 
+<!--
 !!! info
 	The SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a> automatically take care of building the proper JSON object for each request so you don't have to worry about that detail.
+-->
 
 The next articles in this section detail the structure of JSON objects to use to request API resources.
 

@@ -23,6 +23,7 @@ In the manual's reference section you will find all the information required to 
 - The format of the [JSON object](../../reference/requests/linguistic-analysis/index.md) to send together with the request.
 - The format of the [JSON object](../../reference/output/linguistic-analysis/index.md) returned.
 
+<!--
 Here is an example of performing deep linguistic analysis on a short English text using one of the SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a>:
 
 === "Python"
@@ -106,4 +107,4 @@ Here is an example of performing deep linguistic analysis on a short English tex
         }
     }
     ```
-
+-->

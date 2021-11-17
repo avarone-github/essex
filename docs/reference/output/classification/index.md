@@ -47,9 +47,14 @@ Each item of the `categories` array represents a category, for example:
 }
 ```
 
-- `namespace` is the name of the software module carrying out document classification.
+- `namespace` is the name of the software module carrying out document classification inside the text intelligence engine.
 - `id`, `label` and `hierarchy` identify the category in the [categories' tree](../taxonomies-templates/index.md).  
 - `score` is the cumulative score that was attributed to the category.
 - `frequency` is the percentage ratio of the category score to the sum of all categories' scores.
+
+	!!! info
+		Note that the sum of the frequencies of all categories could be less than 100. This occurs when the text intelligence engine is configured to filter out the "losers" categories. that is, those with the lowest scores.  
+		For further information on the topic of category score, consult the <a href="https://docs.expert.ai/studio/latest/languages/categorization/rules/score/" target="_blank">Studio documentation</a>.
+
 - `winner` is a Boolean flag set to `true` if the category was considered particularly relevant.
 - `positions` is an array containing the [positions](../../positions/index.md) of the text blocks that contributed to category score.
