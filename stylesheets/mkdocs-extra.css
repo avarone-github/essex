@@ -1,0 +1,49 @@
+.md-header {
+	background-color: #00b193;
+}
+
+.md-header__button.md-logo {
+	padding-left: 0rem;
+	padding-right: 0rem;    
+}
+
+@media only screen and (max-width: 76.1875em) {
+	html .md-nav--primary .md-nav__title--site {
+		background-color: #00b193;
+	}
+}
+
+.bordered {
+	border: 1px solid
+}
+
+.cards-container {
+    display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.card {
+	flex-grow: 1;
+	padding: 1rem;
+    flex-basis: 40%;
+    margin: 0.5rem;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+	border-radius: .1rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+	    flex-basis: 100%;
+    }
+}
+
+.card:hover {
+	-webkit-transition: -webkit-box-shadow .28s ease-in-out;
+	transition: -webkit-box-shadow .28s ease-in-out;
+	-o-transition: box-shadow .28s ease-in-out;
+	transition: box-shadow .28s ease-in-out;
+	transition: box-shadow .28s ease-in-out,-webkit-box-shadow .28s ease-in-out;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(1,67,163,.05),0 4px 8px 3px rgba(1,67,163,.15);
+	box-shadow: 0 1px 3px 0 rgba(1,67,163,.05),0 4px 8px 3px rgba(1,67,163,.15);
+}
