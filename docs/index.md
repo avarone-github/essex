@@ -9,7 +9,7 @@ Essex is designed to be easily integrated so to add the aforementioned capabilit
 <div class="cards-container">
 <a class="card" href="requirements/"><strong>Requirements</strong></a>
 <a class="card" href="installation/"><strong>Installation</strong></a>
-<a class="card" href="modes/"><strong>Execution modes</strong></a>
+<a class="card" href="setup-run/"><strong>Setup and run</strong></a>
 <a class="card" href="guide/"><strong>API guide</strong></a>
 <a class="card" href="reference/"><strong>API reference</strong></a>
 </div>

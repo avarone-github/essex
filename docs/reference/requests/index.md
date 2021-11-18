@@ -38,7 +38,7 @@ For example, the JSON object to send in order to request document classification
 	The SDKs available on <a href="https://github.com/therealexpertai/" target="_blank">GitHub</a> automatically take care of building the proper JSON object for each request so you don't have to worry about that detail.
 -->
 
-The next articles in this section detail the structure of JSON objects to use to request API resources.
+[Execution mode](../../setup-run/index.md#run-essex) affects the format of the request. In fact, in server mode, in addition to the text of the document, options and features, it is also necessary to specify the name of the resource that must carry out the analysis. The next articles in this section detail the structure of JSON objects to use to request API resources.
 
 <!--
 The `options` property specifies the request type. There can be multiple `options` values in a single request.
