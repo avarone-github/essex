@@ -29,7 +29,7 @@ nav:
 #          - 3. Make your first call: quick-start/first-call/index.md
     - Requirements: requirements/index.md
     - Installation: installation/index.md
-    - Execution modes: modes/index.md
+    - Setup and execution: setup-execution/index.md
     - API guide:
           - Overview: guide/index.md
           - Document analysis:
